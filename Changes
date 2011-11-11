@@ -1,3 +1,4 @@
-0.10_01 - Fri Jan  2 19:11:45 2009
-	* My first version of a command-line interface to PPI::Dumper
+0.11 - Fri Nov 11 17:51:42 2011
+	* Update the Pod to get the right App name
+	* Various other dist maintenance, but no code changes
 

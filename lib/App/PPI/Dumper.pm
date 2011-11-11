@@ -3,7 +3,7 @@ package App::PPI::Dumper;
 
 use vars qw($VERSION);
 
-$VERSION = "0.10_01";
+$VERSION = "0.11";
 
 =head1 NAME
 
@@ -76,7 +76,7 @@ comes directly from PPI::Dumper. I just made a command-line tool for it.
 
 This code is in Github:
 
-        git://github.com/briandfoy/app-ppi-dumper.git
+	git://github.com/briandfoy/app-ppi-dumper.git
 
 =head1 AUTHOR
 
@@ -84,7 +84,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009, brian d foy, All Rights Reserved.
+Copyright (c) 2009-2011, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 
@@ -97,8 +97,7 @@ use PPI::Dumper;
 __PACKAGE__->run(@ARGV) unless caller;
 
 # same defaults as PPI::Dumper
-sub run 
-	{
+sub run {
 	my $self = shift;
 	
 	local @ARGV = @_;
@@ -138,5 +137,7 @@ sub run
 	
 	$Dumper->print;
 	}
+
+1;
 
 __END__

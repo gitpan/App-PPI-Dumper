@@ -3,7 +3,7 @@ package App::PPI::Dumper;
 
 use vars qw($VERSION);
 
-$VERSION = "0.10_01";
+$VERSION = "0.11";
 
 =head1 NAME
 
@@ -11,12 +11,12 @@ ppi_dumper - Use the PPI to dump the structure of a Perl file
 
 =head1 SYNOPSIS
 
-	$ ppi_version [-mPTWClr] [-i N] input_file
+	$ ppi_dumper [-mPTWClr] [-i N] input_file
 	
 =head1 DESCRIPTION
 
-Parse a Perl document with PPI and dump the Perl Document Object Model (PDOM). 
-This script is a command-line interface to PPI::Dumper.
+Parse a Perl document with PPI and dump the Perl Document Object Model
+(PDOM). This script is a command-line interface to PPI::Dumper.
 
 =head1 OPTIONS
 
@@ -52,7 +52,8 @@ Show the source code location of each PPI token.
 
 =item -r 
 
-Parse the input in readonly mode. See PPI::Document::new() for the details.
+Parse the input in readonly mode. See PPI::Document::new() for the
+details.
 
 =back
 
@@ -65,7 +66,7 @@ comes directly from PPI::Dumper. I just made a command-line tool for it.
 
 This code is in Github:
 
-        git://github.com/briandfoy/app-ppi-dumper.git
+	git://github.com/briandfoy/app-ppi-dumper.git
 
 =head1 AUTHOR
 
@@ -73,7 +74,7 @@ brian d foy, C<< <bdfoy@cpan.org> >>
 
 =head1 COPYRIGHT
 
-Copyright (c) 2009, brian d foy, All Rights Reserved.
+Copyright (c) 2009-2011, brian d foy, All Rights Reserved.
 
 You may redistribute this under the same terms as Perl itself.
 
@@ -82,7 +83,6 @@ You may redistribute this under the same terms as Perl itself.
 use App::PPI::Dumper;
 
 App::PPI::Dumper->run(@ARGV);
-
 
 
 __END__
