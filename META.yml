@@ -18,7 +18,7 @@ no_index:
     - t
     - inc
 requires:
-  ExtUtils::MakeMaker: 6.46
+  ExtUtils::MakeMaker: 6.48
   Getopt::Std: 0
   PPI: 0
   PPI::Dumper: 0
@@ -26,4 +26,4 @@ requires:
   Test::Output: 0
 resources:
   repository: https://github.com/briandfoy/app-ppi-dumper
-version: 1.01
+version: 1.02
